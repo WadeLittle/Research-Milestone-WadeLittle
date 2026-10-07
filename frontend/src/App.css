@@ -1,0 +1,12 @@
+main {
+  max-width: 800px;
+  margin: 48px auto;
+  padding: 24px;
+  background: white;
+  border: 1px solid #dbe2ea;
+  border-radius: 8px;
+}
+
+h1 {
+  margin-top: 0;
+}
