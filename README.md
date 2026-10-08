@@ -8,7 +8,7 @@ Individual CSCE research milestone sample for student-housing property managemen
 - `backend/`: Python 3.12+ and FastAPI, managed with uv.
 
 The backend now stores maintenance requests in PostgreSQL. The frontend lets you
-submit requests and view the list. Status controls and filtering come next.
+submit requests, view the list, change status, and filter by status.
 
 Start PostgreSQL first using the instructions in [backend/README.md](backend/README.md).
 

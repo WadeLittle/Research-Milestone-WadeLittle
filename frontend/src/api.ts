@@ -31,3 +31,14 @@ export async function createRequest(data: RequestCreate): Promise<MaintenanceReq
     body: JSON.stringify(data),
   }))
 }
+
+export async function updateRequestStatus(
+  id: number,
+  status: RequestStatus,
+): Promise<MaintenanceRequest> {
+  return readResponse(await fetch(`/api/requests/${id}/status`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ status }),
+  }))
+}
