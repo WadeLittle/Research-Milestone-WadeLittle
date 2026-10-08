@@ -2,13 +2,15 @@
 
 Individual CSCE research milestone sample for student-housing property management.
 
-## Step 1: project structure
+## Project structure
 
 - `frontend/`: React, TypeScript, and Vite, managed with npm.
 - `backend/`: Python 3.12+ and FastAPI, managed with uv.
 
-This first step has a starter page and an API health check. Maintenance requests
-and PostgreSQL will be added in separate commits.
+The backend now stores maintenance requests in PostgreSQL. The frontend is
+still a starter page; connecting it is the next step.
+
+Start PostgreSQL first using the instructions in [backend/README.md](backend/README.md).
 
 Run these in two separate terminals:
 
@@ -20,8 +22,9 @@ npm run dev
 
 ```sh
 cd backend
+cp .env.example .env # first setup only
 uv sync
-uv run uvicorn backend.main:app --reload
+uv run uvicorn backend.main:app --reload --env-file .env
 ```
 
 Open http://localhost:5173 for the frontend and http://localhost:8000/docs
