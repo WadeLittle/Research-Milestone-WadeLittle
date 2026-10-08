@@ -7,8 +7,8 @@ Individual CSCE research milestone sample for student-housing property managemen
 - `frontend/`: React, TypeScript, and Vite, managed with npm.
 - `backend/`: Python 3.12+ and FastAPI, managed with uv.
 
-The backend now stores maintenance requests in PostgreSQL. The frontend is
-still a starter page; connecting it is the next step.
+The backend now stores maintenance requests in PostgreSQL. The frontend lets you
+submit requests and view the list. Status controls and filtering come next.
 
 Start PostgreSQL first using the instructions in [backend/README.md](backend/README.md).
 
